@@ -32,7 +32,10 @@ const Navbar = () => {
                             {navItems}
                         </ul>
                     </div>
+                    <div className="flex items-center gap-2">
+                    <img src="./src/assets/logoIcon.avif" alt="logoIcon" className="w-8 rounded-md" />
                     <a className="text-2xl font-bold cursor-pointer logo">chapterVerse</a>
+                    </div>
                 </div>
                 <div className="navbar-end space-x-3">
                     <div className="navbar-center hidden lg:flex">
