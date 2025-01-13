@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Fredoka:wght@300..700&family=Poppins:wght@500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Poppins", serif;
+}
+
+.logo {
+  font-family: "Freckle Face", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
