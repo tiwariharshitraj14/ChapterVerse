@@ -30,6 +30,7 @@
         "id": 4,
         "title": "1984",
         "author": "George Orwell",
+        "description": "A dystopian novel by George Orwell",
         "price": 55.00,
         "category": "Classic",
         "img": "/1984.jpg"
@@ -38,54 +39,52 @@
         "id": 5,
         "title": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
+        "description": "A classic novel by F. Scott Fitzgerald",
         "price": 39.99,
         "category": "Classic",
         "img": "/TheGreatGatsby.jpg"
     },
     {
         "id": 6,
-        "title": "Pride and Prejudice",
-        "author": "Jane Austen",
-        "price": 89.99,
-        "category": "Romance",
-        "img": "/PrideAndPrejudice.jpg"
-    },
-    {
-        "id": 7,
         "title": "The Catcher in the Rye",
         "author": "J.D. Salinger",
+        "description": "A classic novel by J.D. Salinger",
         "price": 61.39,
-        "category": "Crime Thiller",
+        "category": "Crime",
         "img": "/TheCatcherInTheRye.jpg"
     },
     {
-        "id": 8,
+        "id": 7,
         "title": "The Hobbit",
         "author": "J.R.R. Tolkien",
+        "description": "The classic novel by J.R.R. Tolkien",
         "price": 57.96,
         "category": "Fantasy",
-        "img": "/TheHobbit.jpg"
+        "img": "/TheHobbit.jpeg"
+    },
+    {
+        "id": 8,
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "description": "A classic novel by Paulo Coelho",
+        "price": 79.99,
+        "category": "Fantasy",
+        "img": "/TheAlchemist.jpeg"
     },
     {
         "id": 9,
-        "title": "The Alchemist",
-        "author": "Paulo Coelho",
-        "price": 79.99,
-        "category": "Fantasy",
-        "img": "/TheAlchemist.jpg"
-    },
-    {
-        "id": 10,
         "title": "The Da Vinci Code",
         "author": "Dan Brown",
+        "description": "A classic novel by Dan Brown",
         "price": 99.99,
-        "category": "Crime Thiller",
+        "category": "Crime",
         "img": "/TheDaVinciCode.jpg"
     },
     {
-        "id": 11,
+        "id": 10,
         "title": "The Hunger Games",
         "author": "Suzanne Collins",
+        "description": "A dystopian novel by Suzanne Collins",
         "price": 105.00,
         "category": "Fantasy",
         "img": "/TheHungerGames.jpg"

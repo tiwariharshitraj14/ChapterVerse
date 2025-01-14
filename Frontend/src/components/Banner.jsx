@@ -16,7 +16,7 @@ const Banner = () => {
                         </p>
 
                     </div>
-                    <div className="mt-9">
+                    <div className="mt-10">
                     <label className="flex items-center gap-2 px-3 py-2 border border-gray-300 rounded-md">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ const Banner = () => {
                         </svg>
                         <input type="text" className="grow outline-none bg-transparent" placeholder="Email" />
                     </label>
-                    <button className="btn btn-secondary mt-3">Subscribe</button>
+                    <button className="bg-pink-500 px-2 py-2 rounded-md mt-3 text-white hover:bg-pink-700 duration-300">Subscribe</button>
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 mt-12 md:mt-24 order-1 md:order-2">
