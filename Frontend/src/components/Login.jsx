@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom"
+
 const Login = () => {
     return (
         <div>
             <dialog id="my_modal_3" className="modal">
                 <div className="modal-box bg-white text-black dark:bg-slate-900 dark:text-white">
                     <form method="dialog">
-                        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                        <Link to="/" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</Link>
                     </form>
                     <h3 className="font-bold text-lg">Login</h3>
                     <div className="mt-4 space-y-2">
@@ -19,7 +21,7 @@ const Login = () => {
                     </div>
                     <div className="flex flex-row items-center justify-around mt-4">
                         <button className="bg-pink-500 text-white px-2 py-1 rounded-md hover:bg-pink-700 duration-300">Login</button>
-                        <p>Not registered? <span className="underline text-blue-500 cursor-pointer">Sign up</span>{" "}</p>
+                        <p>Not registered? <Link to="/signup" className="underline text-blue-500 cursor-pointer">Sign up</Link>{" "}</p>
                     </div>
                 </div>
             </dialog>
