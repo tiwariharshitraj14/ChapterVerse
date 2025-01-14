@@ -1,6 +1,7 @@
 import Banner from "./components/Banner"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+import FreeBook from "./components/FreeBook"
 
 const App = () => {
 
@@ -8,6 +9,7 @@ const App = () => {
     <>
       <Navbar />
       <Banner />
+      <FreeBook />
       <Footer/>
     </>
   )

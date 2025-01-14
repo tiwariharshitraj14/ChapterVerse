@@ -30,7 +30,7 @@ const Banner = () => {
                         </svg>
                         <input type="text" className="grow outline-none bg-transparent" placeholder="Email" />
                     </label>
-                    <button className="btn btn-secondary mt-3">Secondary</button>
+                    <button className="btn btn-secondary mt-3">Subscribe</button>
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 mt-12 md:mt-24 order-1 md:order-2">
