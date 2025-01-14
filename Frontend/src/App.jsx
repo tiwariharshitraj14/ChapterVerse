@@ -1,5 +1,6 @@
 import Banner from "./components/Banner"
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 const App = () => {
 
@@ -7,6 +8,7 @@ const App = () => {
     <>
       <Navbar />
       <Banner />
+      <Footer/>
     </>
   )
 }
