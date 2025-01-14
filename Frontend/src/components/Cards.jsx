@@ -1,6 +1,4 @@
 const Card = ({book}) => {
-    console.log(book);
-
     return (
         <>
             <div className="mt-4 my-3 p-3">
