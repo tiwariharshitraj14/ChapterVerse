@@ -17,9 +17,13 @@ const SignUp = () => {
                 if (res.data) {
                     alert("Signup Successfully");
                 }
-            }).catch((err) => {
-                console.log(err);
-                alert("Signup Error:", err);
+                localStorage.setItem('users', JSON.stringify(res.data))
+            })
+            .catch((err) => {
+                if (err.response) {
+                    console.log(err);
+                    alert("Signup Error:" + err.response.data.message);
+                }
             })
     };
     return (
