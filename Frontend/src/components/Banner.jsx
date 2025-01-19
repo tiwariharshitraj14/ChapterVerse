@@ -6,7 +6,9 @@ const Banner = () => {
                     <div className="space-y-9">
                         <h1 className="text-4xl font-bold">
                             Hello, welcome here to learn something {" "}
-                            <span className="text-pink-500">new everyday!!!</span>
+                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400">
+                                new everyday!!!
+                            </span>
                         </h1>
                         <p className="text-lg">
                             Dive into a world of endless knowledge and captivating stories.
@@ -30,7 +32,7 @@ const Banner = () => {
                         </svg>
                         <input type="text" className="grow outline-none bg-transparent" placeholder="Email" />
                     </label>
-                    <button className="bg-pink-500 px-2 py-2 rounded-md mt-3 text-white hover:bg-pink-700 duration-300">Subscribe</button>
+                    <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 dark:from-purple-500 dark:to-pink-500 px-2 py-2 rounded-md mt-3 text-white duration-300">Subscribe</button>
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 mt-12 md:mt-24 order-1 md:order-2">
