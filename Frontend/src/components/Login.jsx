@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import axios from "axios"
 import { useForm } from "react-hook-form";
+import toast from 'react-hot-toast';
 
 const Login = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -13,14 +14,14 @@ const Login = () => {
             .then((res) => {
                 console.log(res.data);
                 if (res.data) {
-                    alert("Login Successfully");
+                    toast.success('Login Successfully');
                 }
                 localStorage.setItem('users', JSON.stringify(res.data.user))
             })
             .catch((err) => {
                 if (err.response) {
                     console.log(err);
-                    alert("Login Error:" + err.response.data.message);
+                    toast.error("Login Error: " + err.response.data.message);
                 }
             })
     };
