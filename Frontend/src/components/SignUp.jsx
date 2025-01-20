@@ -1,9 +1,12 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useForm } from "react-hook-form";
 import axios from "axios"
 import Login from './Login'
 import toast from 'react-hot-toast';
 const SignUp = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location.state?.from?.pathname || "/";
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = async (data) => {
         const userInfo = {
@@ -16,6 +19,7 @@ const SignUp = () => {
                 console.log(res.data);
                 if (res.data) {
                     toast.success('Signup Successfully');
+                    navigate(from, { replace: true })
                 }
                 localStorage.setItem('users', JSON.stringify(res.data.user))
             })
@@ -80,7 +84,7 @@ const SignUp = () => {
                                 )}
                             </div>
                             <div className="flex flex-row items-center justify-around mt-4">
-                                <button className="bg-pink-500 text-white px-2 py-1 rounded-md hover:bg-pink-700 duration-300">Sign Up</button>
+                                <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 dark:from-purple-500 dark:to-pink-500 px-2 py-2 rounded-md text-white duration-300">Sign Up</button>
                                 <p>Have  Account? {" "}
                                     <button
                                         className="underline text-blue-500 cursor-pointer"

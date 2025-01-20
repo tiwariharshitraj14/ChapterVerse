@@ -57,7 +57,7 @@ const Contact = () => {
                             )}
                         </div>
                         <div className="flex flex-row items-center justify-around mt-4">
-                            <button className="bg-pink-500 text-white px-2 py-1 rounded-md hover:bg-pink-700 duration-300">Send</button>
+                            <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 dark:from-purple-500 dark:to-pink-500 px-2 py-1 rounded-md text-white duration-300">Send</button>
                         </div>
                         </form>
                     </div>

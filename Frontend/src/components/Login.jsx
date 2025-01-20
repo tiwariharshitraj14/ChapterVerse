@@ -81,10 +81,8 @@ const Login = () => {
                         </div>
 
                         {/* Button */}
-                        <div className="flex justify-around mt-6">
-                            <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
-                                Login
-                            </button>
+                        <div className="flex flex-row items-center justify-around mt-4">
+                            <button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 dark:from-purple-500 dark:to-pink-500 px-2 py-2 rounded-md text-white duration-300">Login</button>
                             <p>
                                 Not registered?{" "}
                                 <Link
