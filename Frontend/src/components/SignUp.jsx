@@ -4,7 +4,7 @@ import axios from "axios"
 import Login from './Login'
 
 const SignUp = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = async (data) => {
         const userInfo = {
             fullname: data.fullname,
@@ -17,7 +17,7 @@ const SignUp = () => {
                 if (res.data) {
                     alert("Signup Successfully");
                 }
-                localStorage.setItem('users', JSON.stringify(res.data))
+                localStorage.setItem('users', JSON.stringify(res.data.user))
             })
             .catch((err) => {
                 if (err.response) {
