@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useForm } from "react-hook-form";
 import axios from "axios"
 import Login from './Login'
-
+import toast from 'react-hot-toast';
 const SignUp = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = async (data) => {
@@ -15,14 +15,14 @@ const SignUp = () => {
             .then((res) => {
                 console.log(res.data);
                 if (res.data) {
-                    alert("Signup Successfully");
+                    toast.success('Signup Successfully');
                 }
                 localStorage.setItem('users', JSON.stringify(res.data.user))
             })
             .catch((err) => {
                 if (err.response) {
                     console.log(err);
-                    alert("Signup Error:" + err.response.data.message);
+                    toast.error("Signup Error: " + err.response.data.message);
                 }
             })
     };
