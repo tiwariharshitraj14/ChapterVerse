@@ -81,7 +81,7 @@ const SignUp = () => {
                             </div>
                             <div className="flex flex-row items-center justify-around mt-4">
                                 <button className="bg-pink-500 text-white px-2 py-1 rounded-md hover:bg-pink-700 duration-300">Sign Up</button>
-                                <p>Have  Account?
+                                <p>Have  Account? {" "}
                                     <button
                                         className="underline text-blue-500 cursor-pointer"
                                         onClick={() => { document.getElementById("my_modal_3").showModal() }}
